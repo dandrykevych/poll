@@ -1,0 +1,28 @@
+.question {
+  animation: bigScroll 0.3s ease-in 0s, bigFade 0.4s ease-in 0s backwards;
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__option {
+    padding: 14px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    transition: background-color linear .2s;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      background-color: #dedede;
+    }
+
+    & + .question__option {
+      margin-top: 8px;
+    }
+  }
+}
+
